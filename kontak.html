@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haus! Indonesia</title>
+  <link rel="stylesheet" href="uts_aulzahra.css">
+  <link rel="icon" href="media_uts_aulzahra/logohaus.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <header>
+    <div class="header-container">
+      <div class="logo">
+        <img src="media_uts_aulzahra/logohaus2.png" alt="Haus! Logo">
+      </div>
+
+      <nav> 
+  <ul class="navbar">
+    <li><a href="http://localhost/latihan_aulzahra/uts_aulzahra/beranda.html">Beranda</a></li>
+    
+    <li class="dropdown">
+      <a href="http://localhost/latihan_aulzahra/uts_aulzahra/tentangkami.html">Tentang Kami ▾</a>
+      <ul class="dropdown-content">
+         <li><a href="tentangkami.html#profil">Profil</a></li>
+        <li><a href="tentangkami.html#visimisi">Visi dan Misi</a></li>
+        <li><a href="tentangkami.html#sejarah">Sejarah</a></li>
+        <li><a href="tentangkami.html#pelopor">Pelopor</a></li>
+      </ul>
+    </li>
+
+    <!-- ✨ Menu baru di sini -->
+    <li><a href="http://localhost/latihan_aulzahra/uts_aulzahra/kabarhaus.html">#KabarHaus!</a></li>
+
+    <li><a href="http://localhost/latihan_aulzahra/uts_aulzahra/galeri.html">Galeri</a></li>
+
+    <li class="dropdown">
+      <a href="http://localhost/latihan_aulzahra/uts_aulzahra/produk.html">Produk ▾</a>
+      <ul class="dropdown-content">
+        <li><a href="produk.html#menu">Menu</a></li>
+        <li><a href="produk.html#hausparty">Haus! Party</a></li>
+      </ul>
+    </li>
+
+    <li><a href="http://localhost/latihan_aulzahra/uts_aulzahra/lokasi.html">Lokasi</a></li>
+
+    <li class="dropdown">
+      <a href="http://localhost/latihan_aulzahra/uts_aulzahra/wargahaus.html">#WargaHaus! ▾</a>
+      <ul class="dropdown-content">
+        <li><a href="wargahaus.html#registrasi">Registrasi</a></li>
+        <li><a href="wargahaus.html#hausapp">Haus! App</a></li>
+      </ul>
+    </li>
+
+    <li><a href="http://localhost/latihan_aulzahra/uts_aulzahra/kontak.html">Kontak</a></li>
+  </ul>
+</nav>
+
+    </div>
+  </header>
+
+  <main>
+  <div class="content-wrapper">
+
+<!-- KONTEN UTAMA -->
+    <section class="main-content">
+<div class="haus-header">
+  <img src="media_uts_aulzahra/regist.jpg" alt="Haus Header">
+  <div class="page-title">Hubungi Kami Untuk Informasi Lebih Lanjut Tentang Haus! Indonesia</div>
+  <div class="header-overlay"></div> <!-- efek semi transparan -->
+</div>
+<br>
+<div class="contact-us">
+  <div class="contact-container">
+    
+    <div class="contact-us">
+  <div class="contact-wrapper">
+ <div class="contact-form-container">
+  <h3>Kirim pesan, saran, atau pertanyaanmu untuk kami di bawah ini!</h3>
+  <form id="contactForm">
+    <label for="name">Nama</label>
+    <input type="text" id="name" name="name" placeholder="Masukkan nama kamu">
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" placeholder="Masukkan email kamu">
+
+    <label for="message">Pesan</label>
+    <textarea id="message" name="message" rows="5" placeholder="Tulis pesan kamu di sini"></textarea>
+
+    <button type="submit">Kirim Pesan</button>
+  </form>
+</div>
+
+<!-- Popup -->
+<div id="popup" class="popupKontak">
+  <div class="popup-content">
+    <span class="close-btn">&times;</span>
+    <h4>Pesan Berhasil Dikirim! Terima kasih sudah menghubungi kami!</h4>
+  </div>
+</div>
+
+
+
+
+        </section> <!-- tutup section -->  
+  </div> <!-- tutup content-wrapper -->
+</main> <!-- tutup main -->
+
+<script src="uts_aulzahra.js"></script>
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const form = document.getElementById("contactForm");
+  const popup = document.getElementById("popup");
+  const closeBtn = document.querySelector(".close-btn");
+
+  form.addEventListener("submit", function(e) {
+    e.preventDefault(); // cegah reload
+    form.reset(); // hapus isi form
+    popup.style.display = "block"; // tampilkan popup
+  });
+
+  closeBtn.addEventListener("click", function() {
+    popup.style.display = "none"; // sembunyikan popup
+  });
+
+  // Tutup popup kalau user klik di luar area konten
+  window.addEventListener("click", function(e) {
+    if (e.target === popup) {
+      popup.style.display = "none";
+    }
+  });
+});
+</script>
+
+
+
+
+</body>
+<!-- ==================== FOOTER ==================== -->
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-top">
+
+    <!-- KIRI: GAMBAR PNG -->
+    <div class="footer-left">
+      <img src="media_uts_aulzahra/logohaus3-removebg-preview.png" alt="Minuman Haus" class="footer-img">
+    </div>
+
+    <!-- TENGAH: INFO PERUSAHAAN -->
+    <div class="footer-right">
+      <h3>PT. INSPIRASI BISNIS NUSANTARA</h3>
+      <p>© 2025 All Rights Reserved</p>
+
+      <p class="email">
+        <i class="fas fa-envelope"></i>
+        <a href="mailto:halo@haus.co.id">halo@haus.co.id</a>
+      </p>
+
+      <br>
+      <h3>Follow us!</h3>
+      <div class="social-icons">
+        <a href="https://www.instagram.com/haus.indonesia" target="_blank" class="ig">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.tiktok.com/@haus.indonesia" target="_blank" class="tiktok">
+          <i class="fab fa-tiktok"></i>
+        </a>
+        <a href="https://www.linkedin.com/company/haus-indonesia" target="_blank" class="linkedin">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </div>
+
+      <a href="https://haus.co.id" target="_blank" class="haus-link">www.haus.co.id</a>
+    </div>
+
+    <!-- KANAN: LAYANAN PENGADUAN KONSUMEN -->
+    <div class="footer-contact">
+      <h3>Layanan Pengaduan Konsumen</h3>
+      <p>Gedung Sastra Graha Lantai 2,<br>
+      Jalan Raya Perjuangan No 21,<br>
+      Kebon Jeruk, Jakarta Barat 11530</p>
+      <p>📞 0811 1707 012</p>
+      <br>
+      <p><strong>Direktorat Jenderal Perlindungan Konsumen<br>
+      dan Tertib Niaga<br>
+      Kementerian Perdagangan Republik Indonesia</strong></p>
+      <p>📞 0853 1111 1010</p>
+    </div>
+
+  </div>
+
+  <!-- BAWAH: CREDIT -->
+  <div class="footer-bottom">
+    <p>Crafted by <span class="designer">aulzahra</span></p>
+  </div>
+</footer>
+
+
+
+
+</html>

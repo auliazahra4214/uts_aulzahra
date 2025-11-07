@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haus! Indonesia</title>
+  <link rel="stylesheet" href="uts_aulzahra.css">
+  <link rel="icon" href="media_uts_aulzahra/logohaus.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <header>
+    <div class="header-container">
+      <div class="logo">
+        <img src="media_uts_aulzahra/logohaus2.png" alt="Haus! Logo">
+      </div>
+
+      <nav> 
+  <ul class="navbar">
+    <li><a href="http://localhost/latihan_aulzahra/uts_aulzahra/beranda.html">Beranda</a></li>
+    
+    <li class="dropdown">
+      <a href="http://localhost/latihan_aulzahra/uts_aulzahra/tentangkami.html">Tentang Kami ▾</a>
+      <ul class="dropdown-content">
+        <li><a href="tentangkami.html#profil">Profil</a></li>
+        <li><a href="tentangkami.html#visimisi">Visi dan Misi</a></li>
+        <li><a href="tentangkami.html#sejarah">Sejarah</a></li>
+        <li><a href="tentangkami.html#pelopor">Pelopor</a></li>
+      </ul>
+    </li>
+
+    <!-- ✨ Menu baru di sini -->
+    <li><a href="http://localhost/latihan_aulzahra/uts_aulzahra/kabarhaus.html">#KabarHaus!</a></li>
+
+    <li><a href="http://localhost/latihan_aulzahra/uts_aulzahra/galeri.html">Galeri</a></li>
+
+    <li class="dropdown">
+      <a href="http://localhost/latihan_aulzahra/uts_aulzahra/produk.html">Produk ▾</a>
+      <ul class="dropdown-content">
+        <li><a href="produk.html#menu">Menu</a></li>
+        <li><a href="produk.html#hausparty">Haus! Party</a></li>
+      </ul>
+    </li>
+
+    <li><a href="http://localhost/latihan_aulzahra/uts_aulzahra/lokasi.html">Lokasi</a></li>
+
+    <li class="dropdown">
+      <a href="http://localhost/latihan_aulzahra/uts_aulzahra/wargahaus.html">#WargaHaus! ▾</a>
+      <ul class="dropdown-content">
+        <li><a href="wargahaus.html#registrasi">Registrasi</a></li>
+        <li><a href="wargahaus.html#hausapp">Haus! App</a></li>
+      </ul>
+    </li>
+
+    <li><a href="http://localhost/latihan_aulzahra/uts_aulzahra/kontak.html">Kontak</a></li>
+  </ul>
+</nav>
+
+    </div>
+  </header>
+
+  <main>
+  <div class="content-wrapper">
+<aside class="sidebar">
+  <div class="sidebar-content">
+    <h2 style="text-align: center;">Semua Berhak Minum Enak!</h2>
+
+    <div class="info-section">
+      <p style="text-align: center;"><strong>Jam Buka:</strong><br>Senin - Minggu, 09.00 - 22.00</p>
+      <br>
+      <p style="text-align: center;"><strong>Saatnya Minum Enak!</strong> <br><span id="current-time"></span></p>
+    </div>
+<script>
+function updateClock() {
+  const now = new Date();
+  const timeString = now.toLocaleTimeString('id-ID', {
+    hour: '2-digit',
+    minute: '2-digit',
+    second: '2-digit'
+  });
+  document.getElementById('current-time').textContent = timeString;
+}
+setInterval(updateClock, 1000);
+updateClock();
+</script>
+    <div class="video-section">
+      <h3>Haus! Keliling</h3>
+      <iframe width="100%" height="180" src="https://www.youtube.com/embed/NNAjaTNvObs" 
+        title="Haus Keliling 1" frameborder="0" allowfullscreen></iframe>
+      <iframe width="100%" height="180" src="https://www.youtube.com/embed/UfKZA65CQXY" 
+        title="Haus Keliling 2" frameborder="0" allowfullscreen></iframe>
+      <iframe width="100%" height="180" src="https://www.youtube.com/embed/dEwAzGQSy10" 
+        title="Haus Keliling 3" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+</aside>
+
+<!-- KONTEN UTAMA -->
+    <section class="main-content">
+      <div class="haus-header">
+  <img src="media_uts_aulzahra/regist.jpg" alt="Haus Header">
+  <div class="page-title">Selamat Datang di Haus! Indonesia</div>
+  <div class="header-overlay"></div> <!-- efek semi transparan -->
+</div>
+<br>
+      <div class="profile-section">
+        <div class="profile-card">
+          <div class="profile-image">
+            <img src="media_uts_aulzahra/profil" alt="Profil Haus Indonesia">
+          </div>
+          <div style="margin-top: 50px;" class="profile-text">
+            <h2>Tentang Haus! Indonesia</h2>
+            <p>
+              Berdiri sejak tahun 2018, Haus! Indonesia hadir membawa semangat bahwa semua orang berhak menikmati minuman enak dengan harga bersahabat.
+              Dengan lebih dari 200 outlet di seluruh Indonesia, Haus! terus berinovasi menghadirkan minuman kekinian yang segar, nikmat, dan berkualitas.
+            </p>
+            <a href="about.html" class="about-btn">Selengkapnya</a>
+          </div>
+        </div>
+      </div>
+      <br>
+   <!-- ================== PRODUK BEST SELLER ================== -->
+<div class="best-seller fullwidth">
+  <h2>Produk Best Seller</h2>
+
+  <div class="slider-container">
+    <button class="prev-btn"><i class="fa-solid fa-chevron-left"></i></button>
+
+    <div class="product-slider">
+      <div class="product-card"><img src="media_uts_aulzahra/best1" alt="Menu 1"></div>
+      <div class="product-card"><img src="media_uts_aulzahra/best2" alt="Menu 2"></div>
+      <div class="product-card"><img src="media_uts_aulzahra/best3" alt="Menu 3"></div>
+      <div class="product-card"><img src="media_uts_aulzahra/best4" alt="Menu 4"></div>
+      <div class="product-card"><img src="media_uts_aulzahra/best5" alt="Menu 5"></div>
+      <div class="product-card"><img src="media_uts_aulzahra/best6" alt="Menu 6"></div>
+      <div class="product-card"><img src="media_uts_aulzahra/best7" alt="Menu 7"></div>
+      <div class="product-card"><img src="media_uts_aulzahra/best8" alt="Menu 8"></div>
+      <div class="product-card"><img src="media_uts_aulzahra/best9" alt="Menu 9"></div>
+    </div>
+    <br>
+    <!-- ================== BUNDLING ================== -->
+    <button class="next-btn"><i class="fa-solid fa-chevron-right"></i></button>
+  </div>
+</div>
+<div class="bundling-section">
+ <h2>Bundling Menu</h2>
+  <div class="bundling-container">
+    <button class="bundle-btn bundle-prev"><i class="fas fa-chevron-left"></i></button>
+    <div class="bundling-slider">
+      <div class="bundle-item"><img src="media_uts_aulzahra/bun1.png" alt=""></div>
+      <div class="bundle-item"><img src="media_uts_aulzahra/bun2.png" alt=""></div>
+      <div class="bundle-item"><img src="media_uts_aulzahra/bun3.png" alt=""></div>
+      <div class="bundle-item"><img src="media_uts_aulzahra/bun4.png" alt=""></div>
+      <div class="bundle-item"><img src="media_uts_aulzahra/bun5.png" alt=""></div>
+      <div class="bundle-item"><img src="media_uts_aulzahra/bun6.png" alt=""></div>
+    </div>
+    <button class="bundle-btn bundle-next"><i class="fas fa-chevron-right"></i></button>
+  </div>
+  </div>
+  <!-- ================== Haus Mobile ================== -->
+<div class="haus-mobile">
+  <div class="mobile-container">
+    <!-- KIRI: GAMBAR -->
+    <div class="mobile-image">
+      <img src="media_uts_aulzahra/phone.png" alt="Haus Mobile App">
+    </div>
+    <!-- KANAN: TEKS + BUTTON -->
+    <div class="mobile-content">
+      <h2>Download Haus! Mobile App</h2>
+      <p>
+        Nikmati kemudahan pesan minuman favoritmu langsung dari genggaman!  
+        Dapatkan poin, promo eksklusif, dan fitur membership hanya di aplikasi Haus! Mobile.
+      </p>
+      <div class="store-buttons">
+        <a href="https://play.google.com/store/apps/details?id=com.ibn.haus_mobile_app&hl=en-ID" target="_blank">
+          <img src="media_uts_aulzahra/play-removebg-preview.png" alt="Get it on Google Play">
+        </a>
+        <a href="https://apps.apple.com/id/app/haus/id1506176109" target="_blank">
+          <img src="https://apps.apple.com/id/app/haus/id1639044809" alt="Download on the App Store">
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ================== Haus Party ================== -->
+<div class="haus-party">
+  <div class="party-container">
+    <!-- KIRI: TEKS AJAKAN -->
+    <div class="party-content">
+      <h2>Join the Fun with <span>Haus Party!</span></h2>
+      <p>
+        Haus Party adalah program spesial untuk kamu yang ingin merayakan momen seru bersama teman-teman, keluarga, atau komunitas!
+        Nikmati paket minuman kekinian, dekorasi, dan kejutan menarik dari Haus!.
+      </p>
+      <a href="http://localhost/latihan_aulzahra/uts_aulzahra/produk.html#hausparty" class="party-btn">Lihat Selengkapnya!</a>
+    </div>
+    <!-- KANAN: GAMBAR -->
+    <div class="party-image">
+      <img src="media_uts_aulzahra/party.png" alt="Haus Party Celebration">
+    </div>
+  </div>
+</div>
+
+<!-- ================== Artikel ================== -->
+<div class="haus-articles">
+  <h2>Kata Media Tentang Haus!</h2>
+  <div class="articles-grid">
+
+
+    <!-- Artikel 1 -->
+    <div class="article-card">
+      <img src="media_uts_aulzahra/art1.jpeg" alt="Artikel Haus 1">
+      <div class="article-info">
+        <a href="https://www.idntimes.com/food/dining-guide/menu-best-seller-haus-c1c2-01-fgtbv-53gm6l" target="_blank" class="article-title">
+          Menu Best Seller Haus, Salah Satunya Choco Cheese Crunchy
+        </a>
+        <p class="article-meta">Penulis: Siti Zulaikha • 2025<span> IDN Times</span></p>
+      </div>
+    </div>
+
+
+    <!-- Artikel 2 -->
+    <div class="article-card">
+      <img src="media_uts_aulzahra/art2.jpg" alt="Artikel Haus 2">
+      <div class="article-info">
+        <a href="https://olenka.id/cimol-tray-kolaborasi-seru-haus-x-cimol-bojot-aa-berawal-dari-celetukan-shabrina-idol/all." target="_blank" class="article-title">
+          Cimol Tray: Kolaborasi Seru Haus! X Cimol Bojot AA, Berawal dari Celetukan Shabrina Idol.
+        </a>
+        <p class="article-meta">Penulis: Witri Nasuha • 2025<span> Olenka</span></p>
+      </div>
+    </div>
+
+
+    <!-- Artikel 3 -->
+    <div class="article-card">
+      <img src="media_uts_aulzahra/art3.jpg" alt="Artikel Haus 3">
+      <div class="article-info">
+        <a href="https://www.tempo.co/ekonomi/haus-bagikan-1-500-minuman-gratis-pada-aksi-indonesia-gelap-sempat-dilarang-satpol-pp-1210532." target="_blank" class="article-title">
+          Haus! Bagikan 1.500 Minuman Gratis pada Aksi Indonesia Gelap, Sempat Dilarang Satpol PP.
+        </a>
+        <p class="article-meta">Penulis: Aisha Shaidra • 2025<span> Tempo.co</span></p>
+      </div>
+    </div>
+
+
+    <!-- Artikel 4 -->
+    <div class="article-card">
+      <img src="media_uts_aulzahra/art4.jpeg" alt="Artikel Haus 4">
+      <div class="article-info">
+        <a href="https://radarmalang.jawapos.com/wisata-kuliner/815820074/kedai-haus-resmi-buka-di-malang-saatnya-cobain-minuman-viral-bareng-orang-tersayang" target="_blank" class="article-title">
+          Kedai Haus! Resmi Buka di Malang, Saatnya Cobain Minuman Viral Bareng Orang Tersayang.
+        </a>
+        <p class="article-meta">Penulis: Aditya Novrian • 2025<span> Radar Malang</span></p>
+      </div>
+    </div>
+
+
+    <!-- Artikel 5 -->
+    <div class="article-card">
+      <img src="media_uts_aulzahra/art5" alt="Artikel Haus 5">
+      <div class="article-info">
+        <a href="https://olenka.id/haus-dan-perjalanan-kesuksesannya-dari-tren-minuman-kekinian-hingga-sukses-dulang-omzet-miliaran/all." target="_blank" class="article-title">
+           HAUS! dan Perjalanan Kesuksesannya: Dari Tren Minuman Kekinian hingga Sukses Dulang Omzet Miliaran.
+        </a>
+        <p class="article-meta">Penulis: Witri Nasuha • 2024<span> Olenka</span></p>
+      </div>
+    </div>
+
+
+    <!-- Artikel 6 -->
+    <div class="article-card">
+      <img src="media_uts_aulzahra/art6.jpeg" alt="Artikel Haus 6">
+      <div class="article-info">
+        <a href="https://swa.co.id/read/413673/haus-keliling-jadi-inovasi-haus-perluas-pasar." target="_blank" class="article-title">
+          Haus Keliling Jadi Inovasi Haus Perluas Pasar.
+        </a>
+        <p class="article-meta">Penulis: Arie Liliyah • 2023<span> Swa.co</span> 2024</p>
+      </div>
+    </div>
+
+
+  </div>
+</div>
+</section> <!-- tutup section -->  
+  </div> <!-- tutup content-wrapper -->
+</main> <!-- tutup main -->
+
+<script src="uts_aulzahra.js"></script>
+
+
+
+</body>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const slider = document.querySelector(".product-slider");
+  const next = document.querySelector(".next-btn");
+  const prev = document.querySelector(".prev-btn");
+  const card = document.querySelector(".product-card");
+
+  if (!slider || !card) return;
+
+  const cardWidth = card.offsetWidth + 15; // sesuai gap
+  const totalCards = document.querySelectorAll(".product-card").length;
+  const visibleCards = 3;
+  const maxScroll = (Math.ceil(totalCards / visibleCards) - 1) * cardWidth * visibleCards;
+
+  function updateButtons() {
+    prev.classList.toggle("hidden", slider.scrollLeft <= 0);
+    next.classList.toggle("hidden", slider.scrollLeft >= maxScroll - 5);
+  }
+
+  next.addEventListener("click", () => {
+    slider.scrollBy({ left: cardWidth * visibleCards, behavior: "smooth" });
+    setTimeout(updateButtons, 400);
+  });
+
+  prev.addEventListener("click", () => {
+    slider.scrollBy({ left: -cardWidth * visibleCards, behavior: "smooth" });
+    setTimeout(updateButtons, 400);
+  });
+
+  // sembunyikan tombol prev di awal
+  updateButtons();
+
+  // juga deteksi kalau digeser manual (jaga-jaga)
+  slider.addEventListener("scroll", updateButtons);
+});
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const bundlingSlider = document.querySelector(".bundling-slider");
+  const nextBundling = document.querySelector(".bundle-next");
+  const prevBundling = document.querySelector(".bundle-prev");
+  const bundleItem = document.querySelector(".bundle-item");
+
+  if (!bundlingSlider || !nextBundling || !prevBundling || !bundleItem) return;
+
+  let scrollPosition = 0;
+  const slideWidth = bundleItem.offsetWidth + 20; // tambahin margin/gap antar item
+
+  function updateButtons() {
+    const maxScroll = bundlingSlider.scrollWidth - bundlingSlider.clientWidth;
+    prevBundling.style.display = scrollPosition <= 0 ? "none" : "block";
+    nextBundling.style.display = scrollPosition >= maxScroll - 5 ? "none" : "block";
+  }
+
+  nextBundling.addEventListener("click", () => {
+    const maxScroll = bundlingSlider.scrollWidth - bundlingSlider.clientWidth;
+    scrollPosition += slideWidth;
+    if (scrollPosition > maxScroll) scrollPosition = maxScroll;
+    bundlingSlider.scrollTo({ left: scrollPosition, behavior: "smooth" });
+    updateButtons();
+  });
+
+  prevBundling.addEventListener("click", () => {
+    scrollPosition -= slideWidth;
+    if (scrollPosition < 0) scrollPosition = 0;
+    bundlingSlider.scrollTo({ left: scrollPosition, behavior: "smooth" });
+    updateButtons();
+  });
+
+  updateButtons();
+});
+</script>
+
+<!-- ==================== FOOTER ==================== -->
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-top">
+
+    <!-- KIRI: GAMBAR PNG -->
+    <div class="footer-left">
+      <img src="media_uts_aulzahra/logohaus3-removebg-preview.png" alt="Minuman Haus" class="footer-img">
+    </div>
+
+    <!-- TENGAH: INFO PERUSAHAAN -->
+    <div class="footer-right">
+      <h3>PT. INSPIRASI BISNIS NUSANTARA</h3>
+      <p>© 2025 All Rights Reserved</p>
+
+      <p class="email">
+        <i class="fas fa-envelope"></i>
+        <a href="mailto:halo@haus.co.id">halo@haus.co.id</a>
+      </p>
+
+      <br>
+      <h3>Follow us!</h3>
+      <div class="social-icons">
+        <a href="https://www.instagram.com/haus.indonesia" target="_blank" class="ig">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.tiktok.com/@haus.indonesia" target="_blank" class="tiktok">
+          <i class="fab fa-tiktok"></i>
+        </a>
+        <a href="https://www.linkedin.com/company/haus-indonesia" target="_blank" class="linkedin">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </div>
+
+      <a href="https://haus.co.id" target="_blank" class="haus-link">www.haus.co.id</a>
+    </div>
+
+    <!-- KANAN: LAYANAN PENGADUAN KONSUMEN -->
+    <div class="footer-contact">
+      <h3>Layanan Pengaduan Konsumen</h3>
+      <p>Gedung Sastra Graha Lantai 2,<br>
+      Jalan Raya Perjuangan No 21,<br>
+      Kebon Jeruk, Jakarta Barat 11530</p>
+      <p>📞 0811 1707 012</p>
+      <br>
+      <p><strong>Direktorat Jenderal Perlindungan Konsumen<br>
+      dan Tertib Niaga<br>
+      Kementerian Perdagangan Republik Indonesia</strong></p>
+      <p>📞 0853 1111 1010</p>
+    </div>
+
+  </div>
+
+  <!-- BAWAH: CREDIT -->
+  <div class="footer-bottom">
+    <p>Crafted by <span class="designer">aulzahra</span></p>
+  </div>
+</footer>
+
+
+
+
+</html>
