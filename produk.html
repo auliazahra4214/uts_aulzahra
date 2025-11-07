@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haus! Indonesia</title>
+  <link rel="stylesheet" href="uts_aulzahra.css">
+  <link rel="icon" href="media_uts_aulzahra/logohaus.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <header>
+    <div class="header-container">
+      <div class="logo">
+        <img src="media_uts_aulzahra/logohaus2.png" alt="Haus! Logo">
+      </div>
+
+      <nav> 
+  <ul class="navbar">
+    <li><a href="http://localhost/latihan_aulzahra/uts_aulzahra/index.html">Beranda</a></li>
+    
+    <li class="dropdown">
+      <a href="http://localhost/latihan_aulzahra/uts_aulzahra/tentangkami.html">Tentang Kami ▾</a>
+      <ul class="dropdown-content">
+         <li><a href="tentangkami.html#profil">Profil</a></li>
+        <li><a href="tentangkami.html#visimisi">Visi dan Misi</a></li>
+        <li><a href="tentangkami.html#sejarah">Sejarah</a></li>
+        <li><a href="tentangkami.html#pelopor">Pelopor</a></li>
+      </ul>
+    </li>
+
+    <!-- ✨ Menu baru di sini -->
+    <li><a href="http://localhost/latihan_aulzahra/uts_aulzahra/kabarhaus.html">#KabarHaus!</a></li>
+
+    <li><a href="http://localhost/latihan_aulzahra/uts_aulzahra/galeri.html">Galeri</a></li>
+
+    <li class="dropdown">
+      <a href="http://localhost/latihan_aulzahra/uts_aulzahra/produk.html">Produk ▾</a>
+      <ul class="dropdown-content">
+        <li><a href="produk.html#menu">Menu</a></li>
+        <li><a href="produk.html#hausparty">Haus! Party</a></li>
+      </ul>
+    </li>
+
+    <li><a href="http://localhost/latihan_aulzahra/uts_aulzahra/lokasi.html">Lokasi</a></li>
+
+    <li class="dropdown">
+      <a href="http://localhost/latihan_aulzahra/uts_aulzahra/wargahaus.html">#WargaHaus! ▾</a>
+      <ul class="dropdown-content">
+        <li><a href="wargahaus.html#registrasi">Registrasi</a></li>
+        <li><a href="wargahaus.html#hausapp">Haus! App</a></li>
+      </ul>
+    </li>
+
+    <li><a href="http://localhost/latihan_aulzahra/uts_aulzahra/kontak.html">Kontak</a></li>
+  </ul>
+</nav>
+
+    </div>
+  </header>
+
+  <main>
+  <div class="content-wrapper">
+
+
+<!-- KONTEN UTAMA -->
+    <section class="main-content">
+      
+      <div class="haus-header">
+  <img src="media_uts_aulzahra/regist.jpg" alt="Haus Header">
+  <div class="page-title">Nikmati Semua Produk Haus! Indonesia</div>
+  <div class="header-overlay"></div> <!-- efek semi transparan -->
+</div>
+<br>
+      <div class="brand-buttons">
+  <div class="brand-card haus" onclick="showBrand('haus')">
+    <img src="media_uts_aulzahra/hausmenulogo.png" alt="Haus">
+    <h3>Haus</h3>
+  </div>
+
+  <div class="brand-card ganjel" onclick="showBrand('ganjel')">
+    <img src="media_uts_aulzahra/ganjelmenulogo.png" alt="Ganjel Roti">
+    <h3>Ganjel Roti</h3>
+  </div>
+
+  <div class="brand-card pedes" onclick="showBrand('pedes')">
+    <img src="media_uts_aulzahra/pedesmenulogo.png" alt="Pedes Cyin">
+    <h3>Pedes Cyin</h3>
+  </div>
+
+  <div class="brand-card oppa" onclick="showBrand('oppa')">
+    <img src="media_uts_aulzahra/hotoppamenulogo.png" alt="Hot Oppa">
+    <h3>Hot Oppa</h3>
+  </div>
+</div>
+
+  <!-- MAIN CONTAINER -->
+  <div class="container">
+    <div class="menu-container" id="menu"></div>
+
+    <!-- FILTER BUTTONS -->
+    <div class="filter-section" id="filters"></div> 
+  </div>
+
+  <div class="haus-party">
+  <!-- Banner -->
+  <div class="banner">
+    <img src="media_uts_aulzahra/hpbanner.png" alt="Haus Party Banner" id="hausparty">
+  </div>
+  <!-- Marquee text -->
+  <div class="marquee-hp">
+    <marquee behavior="scroll" direction="left" scrollamount="7">
+      Rayakan Kebersamaanmu Dengan Haus! Karena Semua Berhak Minum Enak!
+    </marquee>
+  </div>
+   <!-- Paragraph penjelasan -->
+  <div class="party-description">
+    <p>
+      Untuk acara spesial Warga, kami memiliki <strong>Paket Haus Rame-Rame</strong>. Untuk pertemuan kantor, rapat, ulang tahun, atau acara khusus lainnya, Warga akan mendapatkan layanan terbaik & produk berkualitas tinggi, harga yang affordable, dan layanan crew Haus kami untuk membuat berbagai minuman Haus! dan menu lainnya.
+    </p>
+  </div>
+
+  <!-- Poster layout 2-atas 1-bawah -->
+  <div class="poster-section">
+    <!-- Baris 1: 2 poster -->
+    <div class="poster-row">
+      <img src="media_uts_aulzahra/hpbooth.png" alt="Poster 1">
+      <img src="media_uts_aulzahra/hpparty.png" alt="Poster 2">
+      <img src="media_uts_aulzahra/hpft.png" alt="Poster 3">
+    </div>
+  </div>
+
+
+  <!-- Kontak -->
+  <div class="contact-section">
+    <h3>Untuk info dan pemesanan Haus! Rame-Rame harap hubungi kami:</h3>
+    <div class="contact-info">
+      <p><i class="fa-solid fa-envelope"></i> hello@haus.co.id</p>
+      <p><i class="fa-solid fa-location-dot"></i> Taman Meruya Ilir, Jl. Safir I Blok E6 No. 27</p>
+      <p><i class="fa-brands fa-whatsapp"></i> <a href="https://wa.me/6281234567890" target="_blank">Chat via WhatsApp</a></p>
+    </div>
+  </div>
+  
+</div>
+
+
+
+      </section> <!-- tutup section -->  
+  </div> <!-- tutup content-wrapper -->
+</main> <!-- tutup main -->
+
+<script src="uts_aulzahra.js"></script>
+
+<script>
+    const data = {
+      haus: {
+        filters: ["Premium Series", "Classic Series", "Choco Series", "Boba Series", "Tea Series", "Cheese Series", "Yakult Series", "Creamy Series", "Ice Cream", "Coffee Series", "Silky Pudding"],
+        items: [
+          { name: "Oat Coffee Caramel Macchiato", category: "Premium Series", img: "media_uts_aulzahra/premium_oat_caramel_machiato-CtdWSb1e.jpg"},
+          { name: "Drink Beng-Beng Cream Caramel", category: "Premium Series", img: "media_uts_aulzahra/premium_drink_beng_beng-D_vVQjLD.jpg" },
+          { name: "Choco Cheese Crunchy", category: "Premium Series", img: "media_uts_aulzahra/premium_choco_cheese_crunchy-CC_Ku48f.jpg" },
+          { name: "Choco Crunchy Ice Cream", category: "Premium Series", img: "media_uts_aulzahra/premium_choco_crunchy_ice_cream-D-Z14LNQ.jpg" },
+          
+          { name: "Ovaltine", category: "Classic Series", img: "media_uts_aulzahra/classic_series_ovaltine-CqUCjlOE.png" },
+          { name: "Cookies & Cream", category: "Classic Series", img: "media_uts_aulzahra/classic_series_oreo-LWVhTgjI.png" },
+          { name: "Taro", category: "Classic Series", img: "media_uts_aulzahra/classic_series_taro-rAMtprPJ.png" },
+          { name: "Thai Tea", category: "Classic Series", img: "media_uts_aulzahra/classic_series_thai_tea-Bt7OTvk5.png" },
+          { name: "Green Thai Tea", category: "Classic Series", img: "media_uts_aulzahra/classic_series_green_thaitea-DAIIzZe_.png" },
+          
+          { name: "Choco Hazelnut", category: "Choco Series", img: "media_uts_aulzahra/choco_series_choco_hazlenut-BpYx7E1-.png" },
+          { name: "Choco Lava", category: "Choco Series", img: "media_uts_aulzahra/choco_series_choco_lava_milo-D90yjvQe.png" },
+          { name: "Choco Avocado", category: "Choco Series", img: "media_uts_aulzahra/choco_series_choco_avocado-BAtBgMFo.png" },
+          { name: "Choco Ice Cream Cone", category: "Choco Series", img: "media_uts_aulzahra/choco_series_ice_cream_cone-UYd6LYfe.png" },
+          { name: "Choco Ice Cream Cup", category: "Choco Series", img: "media_uts_aulzahra/choco_series_ice_cream_cup-BIzFD2Bf.png" },
+          { name: "Choco Lava Float", category: "Choco Series", img: "media_uts_aulzahra/choco_series_lava_float-woAgmxf3.png" },
+          { name: "Choco Avocado Float", category: "Choco Series", img: "media_uts_aulzahra/choco_series_avocado_float-BAOaV5oA.jpg" },
+          
+          { name: "Boba Brown Sugar Fresh Milk", category: "Boba Series", img: "media_uts_aulzahra/boba_series_boba_brown_sugar_fresh_milk-Ceq1wYD5.png" },
+          { name: "Boba Brown Sugar Milk Tea", category: "Boba Series", img: "media_uts_aulzahra/boba_series_boba_brown_sugar_milk_tea-Rss8ctJx.png" },
+          
+          { name: "Strawberry Tea", category: "Tea Series", img: "media_uts_aulzahra/tea_series_strawberry_tea-Dn1lbzJC.png" },
+          { name: "Black Jasmine Tea", category: "Tea Series", img: "media_uts_aulzahra/tea_series_black_jasmine_tea-Y5LfiNzZ.png" },
+          { name: "Mango Tea", category: "Tea Series", img: "media_uts_aulzahra/tea_series_mango_tea-U_ySDvmW.png" },
+          { name: "Lychee Tea", category: "Tea Series", img: "media_uts_aulzahra/tea_series_lychee_tea-vkRf2zbQ.png" },
+          { name: "Kiwi Tea", category: "Tea Series", img: "media_uts_aulzahra/tea_series_kiwi_tea-BxCkPFaI.png" },
+          
+          { name: "Green Tea Cheese", category: "Cheese Series", img: "media_uts_aulzahra/cheese_series_greentea_cheese-CV-xKqeN.png" },
+          { name: "Choco Avocado Cheese", category: "Cheese Series", img: "media_uts_aulzahra/cheese_series_choco_avocado_cheese-C734FXkk.png" },
+          { name: "Mango Cheese Tea", category: "Cheese Series", img: "media_uts_aulzahra/cheese_series_mango_cheese_tea-CjSES7bw.png" },
+          { name: "Ovaltine Cheese", category: "Cheese Series", img: "media_uts_aulzahra/cheese_series_ovaltine_cheese-Ceiy_YuA.png" },  
+          { name: "Oreo Cheese", category: "Cheese Series", img: "media_uts_aulzahra/cheese_series_oreo_cheese-Dy9bvnfv.png" },
+          { name: "Strawberry Cheese Tea", category: "Cheese Series", img: "media_uts_aulzahra/cheese_series_strawberry_cheese_tea-BvSb95B7.png" },
+          { name: "Taro Cheese", category: "Cheese Series", img: "media_uts_aulzahra/cheese_series_taro_cheese-DPscjWdM.png" },
+          { name: "Thai Tea Cheese", category: "Cheese Series", img: "media_uts_aulzahra/cheese_series_thai_tea_cheese-DHvBZjEf.png" },
+          { name: "Choco Hazelnut Cheese", category: "Cheese Series", img: "media_uts_aulzahra/cheese_series_choco_hazelnut_cheese-D5wQYmdu.png" },
+          { name: "Choco Lava Cheese", category: "Cheese Series", img: "media_uts_aulzahra/cheese_series_choco_lava_milo_cheese-C-aqp1gw.png" },
+          
+          { name: "Mango Yakult", category: "Yakult Series", img: "media_uts_aulzahra/yakult_series_mango_yakult-BCpkLx1E.png" },
+          { name: "Lychee Yakult", category: "Yakult Series", img: "media_uts_aulzahra/yakult_series_lychee_yakult-6TnTTLnK.png" },
+          
+          { name: "Cookies & Cream", category: "Creamy Series", img: "media_uts_aulzahra/creamy_oreo_cheese-Bqf3zYx-.png" },
+          { name: "Cotton Candy", category: "Creamy Series", img: "media_uts_aulzahra/creamy_cotton_candy-C6Hi8Tve.png" },
+           
+          { name: "Ice Cream Cone Vanilla", category: "Ice Cream", img: "media_uts_aulzahra/ice_cream_cone_vanilla-BcML8-RD.png" },
+          { name: "Ice Cream Cup Cookies & Cream", category: "Ice Cream", img: "media_uts_aulzahra/ice_cream_cookies-CvE2q2xv.png" },
+          { name: "Ice Cream Cup Mango", category: "Ice Cream", img: "media_uts_aulzahra/ice_cream_mango-C-DjuZ8k.png" },
+          { name: "Ice Cream Cup Strawberry", category: "Ice Cream", img: "media_uts_aulzahra/ice_cream_vanilla_straw-DJGyj51t.png" },
+          { name: "Ice Cream Cup Boba Brown Sugar", category: "Ice Cream", img: "media_uts_aulzahra/ice_cream_boba-PYOkolRA.png" },
+
+          { name: "Kopi Susu Gula Aren", category: "Coffee Series", img: "media_uts_aulzahra/coffee_series_kopi_susu_gula_aren-BdOlqSt9.png" },
+          { name: "Kopasus", category: "Coffee Series", img: "media_uts_aulzahra/coffee_series_kopasus-BLYdpAvV.jpg" },
+          
+          { name: "Thai Tea", category: "Silky Pudding", img: "media_uts_aulzahra/pudding_thai_tea-BQPEGOZf.png" },
+          { name: "Chocolate", category: "Silky Pudding", img: "media_uts_aulzahra/pudding_choco-CetCysZO.png" },
+          { name: "Cotton Candy", category: "Silky Pudding", img: "media_uts_aulzahra/pudding_cotton_candy-u0AaRvOe.png" },
+          { name: "Mango", category: "Silky Pudding", img: "media_uts_aulzahra/pudding_mango-CTfqE_dq.png" },
+          { name: "Green Thai Tea", category: "Silky Pudding", img: "media_uts_aulzahra/pudding_green_tea-CwIpukXc.png" },
+          { name: "Taro", category: "Silky Pudding", img: "media_uts_aulzahra/pudding_taro-BztVrh1l.png" },
+          { name: "Bubble Gum", category: "Silky Pudding", img: "media_uts_aulzahra/pudding_bubble_gum-CtYaSZ4C.png" },
+          { name: "Lychee", category: "Silky Pudding", img: "media_uts_aulzahra/pudding_lychee-oTx2iYBS.png" },
+          { name: "Choco cheese", category: "Silky Pudding", img: "media_uts_aulzahra/pudding_choco_cheese-jSl3WvMf.png" },
+          { name: "Mango Cheese", category: "Silky Pudding", img: "media_uts_aulzahra/pudding_mango_cheese-Baj9eVA4.png" },
+        ]
+      },
+      ganjel: {
+        filters: ["Roti Bakar", "Roti Maryam", "Roti Kukus"],
+        items: [
+          { name: "Roti Bakar Blueberry Keju", category: "Roti Bakar", img: "media_uts_aulzahra/roti_bakar_blueberry_keju-BenXc9rc.png" },
+          { name: "Roti Bakar Blueberry", category: "Roti Bakar", img: "media_uts_aulzahra/roti_bakar_blueberry-Ci_VJeNF.png" },
+          { name: "Roti Bakar Chocomaltine Keju", category: "Roti Bakar", img: "media_uts_aulzahra/roti_bakar_chocomaltine_keju-DoCsLPTW.png" },
+          { name: "Roti Bakar Chocomaltine", category: "Roti Bakar", img: "media_uts_aulzahra/roti_bakar_chocomaltine-CzaVtEzt.png" },
+          { name: "Roti Bakar Cokelat Keju", category: "Roti Bakar", img: "media_uts_aulzahra/roti_bakar_cokelat_keju-BW2VbhIU.png" },
+          { name: "Roti Bakar Cokelat", category: "Roti Bakar", img: "media_uts_aulzahra/roti_bakar_cokelat-B2ayEWNJ.png" },
+          { name: "Roti Bakar Keju", category: "Roti Bakar", img: "media_uts_aulzahra/roti_bakar_keju-CxzINKE4.png" },
+          { name: "Roti Bakar Room Butter", category: "Roti Bakar", img: "media_uts_aulzahra/roti_bakar_room_butter-DEQ09Aic.png" },
+          { name: "Roti Bakar Strawberry", category: "Roti Bakar", img: "media_uts_aulzahra/roti_bakar_strawberry-F-xaR8kQ.png" },
+          
+          { name: "Roti Maryam Blueberry Keju", category: "Roti Maryam", img: "media_uts_aulzahra/roti_maryam_blueberry_keju-Dtq05dZ_.png" },
+          { name: "Roti Maryam Blueberry", category: "Roti Maryam", img: "media_uts_aulzahra/roti_maryam_blueberry-CP1q1ql5.png" },
+          { name: "Roti Maryam Chocomaltine Keju", category: "Roti Maryam", img: "media_uts_aulzahra/roti_maryam_chocomaltine_keju-ZxQmM1EF.png" },
+          { name: "Roti Maryam Chocomaltine", category: "Roti Maryam", img: "media_uts_aulzahra/roti_maryam_chocomaltine-REznnIXz.png" },
+          { name: "Roti Maryam Cokelat Keju", category: "Roti Maryam", img: "media_uts_aulzahra/roti_maryam_cokelat_keju-DXeZDDCN.png" },
+          { name: "Roti Maryam Cokelat", category: "Roti Maryam", img: "media_uts_aulzahra/roti_maryam_cokelat-BdLQSGWz.png" },
+          { name: "Roti Maryam Keju", category: "Roti Maryam", img: "media_uts_aulzahra/roti_maryam_keju-CM80uog0.png" },
+          { name: "Roti Maryam Strawberry", category: "Roti Maryam", img: "media_uts_aulzahra/roti_maryam_strawberry-Ba7o_fio.png" },
+          { name: "Roti Maryam Susu", category: "Roti Maryam", img: "media_uts_aulzahra/roti_maryam_susu-jvW5xcpF.png" },
+          
+          { name: "Roti Kukus Blueberry Keju", category: "Roti Kukus", img: "media_uts_aulzahra/roti_kukus_blueberry_keju-oKNTCmak.png" },
+          { name: "Roti Kukus Blueberry", category: "Roti Kukus", img: "media_uts_aulzahra/roti_kukus_blueberry-D_DgW_L1.png" },
+          { name: "Roti Kukus Chocomaltine Keju", category: "Roti Kukus", img: "media_uts_aulzahra/roti_kukus_chocomaltine_keju-C-qPEc9P.png" },
+          { name: "Roti Kukus Chocomaltine", category: "Roti Kukus", img: "media_uts_aulzahra/roti_kukus_chocomaltine-BqxBoqa-.png" },
+          { name: "Roti Kukus Cokelat Keju", category: "Roti Kukus", img: "media_uts_aulzahra/roti_kukus_cokelat_keju-Awkuolqh.png" },
+          { name: "Roti Kukus Cokelat", category: "Roti Kukus", img: "media_uts_aulzahra/roti_kukus_cokelat-CBYRfRXJ.png" },
+          { name: "Roti Kukus Keju", category: "Roti Kukus", img: "media_uts_aulzahra/roti_kukus_keju-Bwhb3VSJ.png" },
+          { name: "Roti Kukus Strawberry", category: "Roti Kukus", img: "media_uts_aulzahra/roti_kukus_strawberry-DH3cgCzn.png" },
+        ]
+      },
+      pedes: {
+        filters: ["Pedes Cyin"],
+        items: [
+          { name: "Bakso Goreng", category: "Pedes Cyin", img: "media_uts_aulzahra/pedes_cyin_baso_goreng-pFuUw7_i.png" },
+          { name: "Makaroni Goreng", category: "Pedes Cyin", img: "media_uts_aulzahra/pedes_cyin_makaroni_goreng-Dby0k7Sb.png" },
+          { name: "Usus Goreng", category: "Pedes Cyin", img: "media_uts_aulzahra/pedes_cyin_usus_goreng-WJThsmyM.png" },
+        ]
+      },
+      oppa: {
+        filters: ["Cheese Series","Noodle Soup", "Fried Noodles", "Side Dish", "Dimsum"],
+        items: [
+          { name: "Spicy Cheese Fried Ramyeon", category: "Cheese Series", img: "media_uts_aulzahra/hot_oppa_cheese_series_spicy_cheese_fried_ramyeon-BCfm-Zxu.png" },
+          { name: "Spicy Double Cheese Ramyeon", category: "Cheese Series", img: "media_uts_aulzahra/hot_oppa_cheese_series_spicy_double_cheese_ramyeon-BGBmb3mZ.png" },
+
+          { name: "Spicy Kimchi Ramyeon", category: "Noodle Soup", img: "media_uts_aulzahra/noodle_soup_spicy_kimchi_ramyeon-DJ7cVWVe.png" },
+          { name: "Black Garlic Ramyeon", category: "Noodle Soup", img: "media_uts_aulzahra/noodle_soup_black_garlic_ramyeon-_A0_q8b9.png" },
+          { name: "Bone Marrow Ramyeon", category: "Noodle Soup", img: "media_uts_aulzahra/noodle_soup_bone_marrow_ramyeon-COFr49RF.png" },
+
+          { name: "Bolognese Fried Ramyeon", category: "Fried Noodles", img: "media_uts_aulzahra/fried_noodles_bolognese_fried_ramyeon-Cm-Y9VeW.png" },
+          { name: "Chicken Fried Ramyeon", category: "Fried Noodles", img: "media_uts_aulzahra/fried_noodles_chicken_fried_ramyeon-Co53rWzQ.png" },
+          { name: "Extra Spicy Fried Ramyeon", category: "Fried Noodles", img: "media_uts_aulzahra/fried_noodles_extra_spicy_fried_ramyeon-DxafCNAP.png" },
+          { name: "Spicy Bibim Fried Ramyeon", category: "Fried Noodles", img: "media_uts_aulzahra/fried_noodles_spicy_bibim_fried_ramyeon-DiWjo9to.png" },
+
+          { name: "Cheese Bomb Dumpling", category: "Side Dish", img: "media_uts_aulzahra/fried_side_dish_cheese_bomb_dumpling-ByWFLEjs.png" },
+          { name: "Chicken Bomb Dumpling", category: "Side Dish", img: "media_uts_aulzahra/fried_side_dish_chicken_bomb_dumpling-BWZGbl7j.png" },
+          { name: "Chikuwa", category: "Side Dish", img: "media_uts_aulzahra/fried_side_dish_chikuwa-7KiG90lg.png" },
+          { name: "Crab Stick", category: "Side Dish", img: "media_uts_aulzahra/fried_side_dish_crab_stick-Dk7QXb5d.png" },
+          { name: "Fish Ball", category: "Side Dish", img: "media_uts_aulzahra/fried_side_dish_fish_ball-DIJD3JC_.png" },
+          { name: "Fish Cake", category: "Side Dish", img: "media_uts_aulzahra/fried_side_dish_fish_cake-Bv0Z-5IW.png" },
+          { name: "Odeng", category: "Side Dish", img: "media_uts_aulzahra/fried_side_dish_odeng-BDgzYwTu.png" },
+          { name: "Spicy Fish Cake", category: "Side Dish", img: "media_uts_aulzahra/fried_side_dish_spicy_fish_cake-C8NvkQ2E.png" },
+          { name: "Meatball", category: "Side Dish", img: "media_uts_aulzahra/fried_side_dish_meatball-Cdz2UpQn.png" },
+          { name: "Fish Roll", category: "Side Dish", img: "media_uts_aulzahra/boiled_side_dish_fish_roll-BR7LrC9j.png" },
+          { name: "Shrimp Ball", category: "Side Dish", img: "media_uts_aulzahra/boiled_side_dish_shrimp_ball-CFVbkeLR.png" },
+          { name: "Mandu", category: "Side Dish", img: "media_uts_aulzahra/boiled_side_dish_mandu-ChmAssIU.png" },
+          { name: "Gimmari", category: "Side Dish", img: "media_uts_aulzahra/boiled_side_dish_gimmari-B6riJeQm.png" },
+          
+
+          { name: "Dimsum Beef", category: "Dimsum", img: "media_uts_aulzahra/dimsum_beef-DORJeJr4.png" },
+          { name: "Dimsum Crab", category: "Dimsum", img: "media_uts_aulzahra/dimsum_crab-DnspWpSU.png" },
+          { name: "Dimsum Udang", category: "Dimsum", img: "media_uts_aulzahra/dimsum_udang-BporEWPq.png" },
+          { name: "Dimsum Jamur", category: "Dimsum", img: "media_uts_aulzahra/dimsum_jamur-BaV0pluK.png" },
+          { name: "Dimsum Rambutan", category: "Dimsum", img: "media_uts_aulzahra/dimsum_rambutan-Bv1RGfs7.png" },
+          { name: "Dimsum Wortel", category: "Dimsum", img: "media_uts_aulzahra/dimsum_wortel--4ABPexK.png" },
+          { name: "Kulit Udang", category: "Dimsum", img: "media_uts_aulzahra/dimsum_kulit_udang-CrGkhTnS.png" },
+        ]
+      }
+    };
+
+    let currentBrand = "haus";
+
+    function showBrand(brand) {
+      currentBrand = brand;
+      renderMenu(brand);
+      renderFilters(brand);
+    }
+
+    function renderMenu(brand, category = null) {
+      const menu = document.getElementById("menu");
+      const items = data[brand].items.filter(item => !category || item.category === category);
+
+      menu.innerHTML = items.map(item => `
+        <div class="menu-item">
+          <img src="${item.img || 'img/dummy.jpg'}" alt="${item.name}">
+          <p>${item.name}</p>
+        </div>
+      `).join("");
+    }
+
+    function renderFilters(brand) {
+      const filters = document.getElementById("filters");
+      filters.innerHTML = `
+        <h3>Kategori</h3>
+        ${data[brand].filters.map(f => `<button class="filter-btn" onclick="filterCategory('${f}')">${f}</button>`).join("")}
+        <button class="filter-btn" onclick="showBrand('${brand}')">Semua</button>
+      `;
+    }
+
+    function filterCategory(cat) {
+      renderMenu(currentBrand, cat);
+      document.querySelectorAll(".filter-btn").forEach(btn => btn.classList.remove("active"));
+      const activeBtn = [...document.querySelectorAll(".filter-btn")].find(btn => btn.textContent === cat);
+      if (activeBtn) activeBtn.classList.add("active");
+    }
+
+    // load default
+    showBrand("haus");
+  </script>
+
+</body>
+<!-- ==================== FOOTER ==================== -->
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-top">
+
+    <!-- KIRI: GAMBAR PNG -->
+    <div class="footer-left">
+      <img src="media_uts_aulzahra/logohaus3-removebg-preview.png" alt="Minuman Haus" class="footer-img">
+    </div>
+
+    <!-- TENGAH: INFO PERUSAHAAN -->
+    <div class="footer-right">
+      <h3>PT. INSPIRASI BISNIS NUSANTARA</h3>
+      <p>© 2025 All Rights Reserved</p>
+
+      <p class="email">
+        <i class="fas fa-envelope"></i>
+        <a href="mailto:halo@haus.co.id">halo@haus.co.id</a>
+      </p>
+
+      <br>
+      <h3>Follow us!</h3>
+      <div class="social-icons">
+        <a href="https://www.instagram.com/haus.indonesia" target="_blank" class="ig">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.tiktok.com/@haus.indonesia" target="_blank" class="tiktok">
+          <i class="fab fa-tiktok"></i>
+        </a>
+        <a href="https://www.linkedin.com/company/haus-indonesia" target="_blank" class="linkedin">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </div>
+
+      <a href="https://haus.co.id" target="_blank" class="haus-link">www.haus.co.id</a>
+    </div>
+
+    <!-- KANAN: LAYANAN PENGADUAN KONSUMEN -->
+    <div class="footer-contact">
+      <h3>Layanan Pengaduan Konsumen</h3>
+      <p>Gedung Sastra Graha Lantai 2,<br>
+      Jalan Raya Perjuangan No 21,<br>
+      Kebon Jeruk, Jakarta Barat 11530</p>
+      <p>📞 0811 1707 012</p>
+      <br>
+      <p><strong>Direktorat Jenderal Perlindungan Konsumen<br>
+      dan Tertib Niaga<br>
+      Kementerian Perdagangan Republik Indonesia</strong></p>
+      <p>📞 0853 1111 1010</p>
+    </div>
+
+  </div>
+
+  <!-- BAWAH: CREDIT -->
+  <div class="footer-bottom">
+    <p>Crafted by <span class="designer">aulzahra</span></p>
+  </div>
+</footer>
+
+
+
+
+</html>

@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haus! Indonesia</title>
+  <link rel="stylesheet" href="uts_aulzahra.css">
+  <link rel="icon" href="media_uts_aulzahra/logohaus.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <header>
+    <div class="header-container">
+      <div class="logo">
+        <img src="media_uts_aulzahra/logohaus2.png" alt="Haus! Logo">
+      </div>
+
+      <nav> 
+  <ul class="navbar">
+    <li><a href="http://localhost/latihan_aulzahra/uts_aulzahra/index.html">Beranda</a></li>
+    
+    <li class="dropdown">
+      <a href="http://localhost/latihan_aulzahra/uts_aulzahra/tentangkami.html">Tentang Kami ▾</a>
+      <ul class="dropdown-content">
+         <li><a href="tentangkami.html#profil">Profil</a></li>
+        <li><a href="tentangkami.html#visimisi">Visi dan Misi</a></li>
+        <li><a href="tentangkami.html#sejarah">Sejarah</a></li>
+        <li><a href="tentangkami.html#pelopor">Pelopor</a></li>
+      </ul>
+    </li>
+
+    <!--  Menu baru di sini -->
+    <li><a href="http://localhost/latihan_aulzahra/uts_aulzahra/kabarhaus.html">#KabarHaus!</a></li>
+
+    <li><a href="http://localhost/latihan_aulzahra/uts_aulzahra/galeri.html">Galeri</a></li>
+
+    <li class="dropdown">
+      <a href="http://localhost/latihan_aulzahra/uts_aulzahra/produk.html">Produk ▾</a>
+      <ul class="dropdown-content">
+        <li><a href="produk.html#menu">Menu</a></li>
+        <li><a href="produk.html#hausparty">Haus! Party</a></li>
+      </ul>
+    </li>
+
+    <li><a href="http://localhost/latihan_aulzahra/uts_aulzahra/lokasi.html">Lokasi</a></li>
+
+    <li class="dropdown">
+      <a href="http://localhost/latihan_aulzahra/uts_aulzahra/wargahaus.html">#WargaHaus! ▾</a>
+      <ul class="dropdown-content">
+        <li><a href="wargahaus.html#registrasi">Registrasi</a></li>
+        <li><a href="wargahaus.html#hausapp">Haus! App</a></li>
+      </ul>
+    </li>
+
+    <li><a href="http://localhost/latihan_aulzahra/uts_aulzahra/kontak.html">Kontak</a></li>
+  </ul>
+</nav>
+
+    </div>
+  </header>
+
+  <main>
+  <div class="content-wrapper">
+
+<!-- KONTEN UTAMA -->
+    <section class="main-content">
+      <div class="haus-header">
+  <img src="media_uts_aulzahra/regist.jpg" alt="Haus Header">
+  <div class="page-title">Galeri Haus! Indonesia Dengan Dukungan #WargaHaus!</div>
+  <div class="header-overlay"></div> <!-- efek semi transparan -->
+</div>
+<br>
+<style>
+/* ====== GALERI SECTION ====== */
+/* ====== GALERI SECTION ====== */
+.galeri-section {
+  padding: 20px 20px;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.galeri-section h2 {
+  margin-bottom: 25px;
+  color: #333;
+  font-size: 26px;
+  letter-spacing: 0.5px;
+}
+
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 kolom */
+  gap: 20px; /* jarak antar foto seragam */
+  justify-items: center;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.photo-frame {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 450px;
+  height: 420px;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.photo-frame:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.25);
+}
+
+.photo-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 12px;
+  padding: 4px;
+  background-color: #E23766;
+}
+
+/* ====== POPUP GALERI ====== */
+/* ====== POPUP GALERI ====== */
+.popup-galeri {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0,0,0,0.75);
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  animation: fadeIn 0.3s ease;
+}
+
+.popup-galeri-content {
+  background: #fff;
+  border-radius: 14px;
+  padding: 20px;
+  width: 100%;
+  max-width: 340px; /* biar ukurannya mirip dengan foto galeri */
+  text-align: center;
+  position: relative;
+  box-shadow: 0 6px 25px rgba(0,0,0,0.25);
+  animation: popIn 0.3s ease;
+}
+
+.popup-galeri-content img {
+  width: 100%;
+  height: 220px; /* sama tinggi dengan galeri */
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  margin-top: 20px;
+}
+
+.popup-galeri-text {
+  text-align: left;
+  padding: 0 5px;
+}
+
+.popup-galeri-text h3 {
+  font-size: 18px;
+  color: #222;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.popup-galeri-text p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+/* Tombol close */
+.close-galeri-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 26px;
+  font-weight: bold;
+  color: #444;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.close-galeri-btn:hover {
+  color: #e74c3c;
+}
+
+/* Animasi */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes popIn {
+  from { transform: scale(0.85); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+
+/* ====== RESPONSIF ====== */
+@media (max-width: 900px) {
+  .gallery-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+  }
+}
+
+@media (max-width: 600px) {
+  .gallery-container {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  .photo-frame {
+    height: 200px;
+  }
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="galeri-section">
+  <div class="gallery-container">
+
+    <div class="photo-frame" data-title="Kuliner by AYA" data-caption="Yaampun sejak kapan haus punya store secakep ini🥹 ke sini cobain menu yg collab sama cimol bojot.">
+      <img src="media_uts_aulzahra/glr1" alt="glr1">
+    </div>
+
+    <div class="photo-frame" data-title="Aprillia Audia Risa" data-caption="Tempatnya bersih, nyaman, dan cocok buat santai atau ngerjain tugas.">
+      <img src="media_uts_aulzahra/glr2" alt="glr2">
+    </div>
+
+    <div class="photo-frame" data-title="Ael Jeon" data-caption="Karyawan nya ramah banget, penyajian nya juga cepat..">
+      <img src="media_uts_aulzahra/glr3" alt="glr3">
+    </div>
+
+    <div class="photo-frame" data-title="Jaka Dwi Rizkie" data-caption="Mantaapp, disini selalu ramai, ada menu terbarunya juga dari haus 👍">
+      <img src="media_uts_aulzahra/glr4" alt="glr4">
+    </div>
+
+    <div class="photo-frame" data-title="Verra Shantika" data-caption="Haus! the best! 💯 Minuman enak, staff-nya super ramah, store bersih.">
+      <img src="media_uts_aulzahra/glr5" alt="glr5">
+    </div>
+
+    <div class="photo-frame" data-title="Risti Siahaan" data-caption="Tempatnya nyaman, luas, bisa buat nongkrong juga.">
+      <img src="media_uts_aulzahra/glr7" alt="glr7">
+    </div>
+
+    <div class="photo-frame" data-title="Jonathan Andreas" data-caption="Tempat bagus dan rapih, konsep colorful, ramai antre.">
+      <img src="media_uts_aulzahra/glr9" alt="glr9">
+    </div>
+
+    <div class="photo-frame" data-title="Nanda" data-caption="Enak banget!!!! must try haus with snacktrayy nyaa ❤️">
+      <img src="media_uts_aulzahra/glr10" alt="glr10">
+    </div>
+
+    <div class="photo-frame" data-title="Tya Agustina" data-caption="Haus bengbeng drink top mantap isdebess">
+      <img src="media_uts_aulzahra/glr11" alt="glr11">
+    </div>
+
+    <div class="photo-frame" data-title="June" data-caption="Haus bener-bener recommended. Pelayanannya super ramah.">
+      <img src="media_uts_aulzahra/glr12" alt="glr12">
+    </div>
+
+    <div class="photo-frame" data-title="Luthfi Annida" data-caption="Pelayanan oke. Tempat oke. Rasanya enak banget!">
+      <img src="media_uts_aulzahra/glr14" alt="glr14">
+    </div>
+
+    <div class="photo-frame" data-title="Defti Juniarza" data-caption="Enak Roti Kukusnya, rasanya 5/5!">
+      <img src="media_uts_aulzahra/glr15" alt="glr15">
+    </div>
+
+  </div>
+</div>
+
+<!-- Popup -->
+<div class="popup-galeri" id="popup-galeri">
+  <div class="popup-galeri-content">
+    <span class="close-galeri-btn">&times;</span>
+    <img id="popup-galeri-img" src="" alt="">
+    <div class="popup-galeri-text">
+      <h3>Keterangan</h3>
+      <p id="popup-galeri-caption"></p>
+    </div>
+  </div>
+</div>
+
+<!-- ====== INTERNAL JS ====== -->
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const photoFrames = document.querySelectorAll('.photo-frame');
+  const popup = document.getElementById('popup-galeri');
+  const popupImg = document.getElementById('popup-galeri-img');
+  const popupTitle = document.querySelector('.popup-galeri-text h3');
+  const popupCaption = document.getElementById('popup-galeri-caption');
+  const closeBtn = document.querySelector('.close-galeri-btn');
+
+  // Klik foto -> buka popup
+  photoFrames.forEach(frame => {
+    frame.addEventListener('click', () => {
+      popupImg.src = frame.querySelector('img').src;
+      popupTitle.textContent = frame.dataset.title;
+      popupCaption.textContent = frame.dataset.caption;
+      popup.style.display = 'flex';
+      document.body.style.overflow = 'hidden';
+    });
+  });
+
+  // Klik tombol X -> tutup popup
+  closeBtn.addEventListener('click', () => {
+    popup.style.display = 'none';
+    document.body.style.overflow = 'auto';
+  });
+
+  // Klik luar konten -> tutup popup
+  popup.addEventListener('click', (e) => {
+    if (e.target === popup) {
+      popup.style.display = 'none';
+      document.body.style.overflow = 'auto';
+    }
+  });
+});
+</script>
+
+      </section> <!-- tutup section -->  
+  </div> <!-- tutup content-wrapper -->
+</main> <!-- tutup main -->
+
+<script src="uts_aulzahra.js"></script>
+
+
+
+</body>
+<script>
+  const modal = document.getElementById("fotoModal");
+  const modalImg = document.getElementById("modalImg");
+  const captionText = document.getElementById("caption");
+
+  function openModal(imgElement) {
+    modal.style.display = "block";
+    modalImg.src = imgElement.src;
+    captionText.innerHTML = imgElement.alt;
+  }
+
+  function closeModal() {
+    modal.style.display = "none";
+  }
+</script>
+
+<!-- ==================== FOOTER ==================== -->
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-top">
+
+    <!-- KIRI: GAMBAR PNG -->
+    <div class="footer-left">
+      <img src="media_uts_aulzahra/logohaus3-removebg-preview.png" alt="Minuman Haus" class="footer-img">
+    </div>
+
+    <!-- TENGAH: INFO PERUSAHAAN -->
+    <div class="footer-right">
+      <h3>PT. INSPIRASI BISNIS NUSANTARA</h3>
+      <p>© 2025 All Rights Reserved</p>
+
+      <p class="email">
+        <i class="fas fa-envelope"></i>
+        <a href="mailto:halo@haus.co.id">halo@haus.co.id</a>
+      </p>
+
+      <br>
+      <h3>Follow us!</h3>
+      <div class="social-icons">
+        <a href="https://www.instagram.com/haus.indonesia" target="_blank" class="ig">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.tiktok.com/@haus.indonesia" target="_blank" class="tiktok">
+          <i class="fab fa-tiktok"></i>
+        </a>
+        <a href="https://www.linkedin.com/company/haus-indonesia" target="_blank" class="linkedin">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </div>
+
+      <a href="https://haus.co.id" target="_blank" class="haus-link">www.haus.co.id</a>
+    </div>
+
+    <!-- KANAN: LAYANAN PENGADUAN KONSUMEN -->
+    <div class="footer-contact">
+      <h3>Layanan Pengaduan Konsumen</h3>
+      <p>Gedung Sastra Graha Lantai 2,<br>
+      Jalan Raya Perjuangan No 21,<br>
+      Kebon Jeruk, Jakarta Barat 11530</p>
+      <p>📞 0811 1707 012</p>
+      <br>
+      <p><strong>Direktorat Jenderal Perlindungan Konsumen<br>
+      dan Tertib Niaga<br>
+      Kementerian Perdagangan Republik Indonesia</strong></p>
+      <p>📞 0853 1111 1010</p>
+    </div>
+
+  </div>
+
+  <!-- BAWAH: CREDIT -->
+  <div class="footer-bottom">
+    <p>Crafted by <span class="designer">aulzahra</span></p>
+  </div>
+</footer>
+
+
+
+
+</html>
